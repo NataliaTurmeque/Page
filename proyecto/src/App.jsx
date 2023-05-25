@@ -1,4 +1,3 @@
-
 import {useRoutes, BrowserRouter} from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
@@ -7,6 +6,8 @@ import CartPage from './pages/CartPage'
 import Products from './pages/Products'
 import NotFound from './pages/NotFound'
 import NavBar from './components/NavBar'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 
 function AppRoutes() {
@@ -27,8 +28,13 @@ function App() {
   return (
 
        <BrowserRouter>
-       <AppRoutes />
-       <NavBar />
+      <div className='principalContainer'>
+      <NavBar />
+      <div className='containerViews'>
+      <AppRoutes />
+      </div>
+       
+      </div>
        </BrowserRouter>
   )
 }

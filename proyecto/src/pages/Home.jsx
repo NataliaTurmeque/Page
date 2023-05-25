@@ -4,7 +4,7 @@ function Home(){
     
     return (
         <div>
-            <h1>Binvenido a nuestra tienda en linea</h1>
+            <h1>Bienvenido a nuestra tienda en linea</h1>
         </div>
     )
 }
